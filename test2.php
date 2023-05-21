@@ -1,5 +1,22 @@
 <?php
-$fil=['Репорты', 'Аналитика', 'Экспорт', 'Хранилище',
+$fil=[
+    [
+        'tags'=>"reports file",
+        'title'=>'Репорты'
+    ],
+    [
+        'tags'=>"analytics graphs",
+        'title'=>'Аналитика'
+    ],
+    [
+        'tags'=>"export download",
+        'title'=>'Экспорт'
+    ],
+    [
+        'tags'=>"storage",
+        'title'=>'Хранилище'
+    ],
+
 ];
 ?>
 <!DOCTYPE html>
@@ -48,21 +65,13 @@ $fil=['Репорты', 'Аналитика', 'Экспорт', 'Хранили�
                                 </div>
                             </div>
                             <ul id="js-list-msg" class="list-group px-2 pb-2 js-list-filter">
+                                <?php foreach ($fil as $fi):?>
                                 <li class="list-group-item">
-                                    <span data-filter-tags="reports file"><?php echo $fil[0];?></span>
+                                    <span data-filter-tags="<?php echo $fi['tags'];?>"><?php echo $fi['title'];?></span>
                                 </li>
-                                <li class="list-group-item">
-                                    <span data-filter-tags="analytics graphs"><?php echo $fil[1];?></span>
-                                </li>
-                                <li class="list-group-item">
-                                    <span data-filter-tags="export download"><?php echo $fil[2];?></span>
-                                </li>
-                                <li class="list-group-item">
-                                    <span data-filter-tags="storage"><?php echo $fil[3];?></span>
-                                </li>
+                                <?php endforeach;?>
                             </ul>
                             <div class="filter-message js-filter-message mt-0 fs-sm"></div>
-                        </div>
                     </div>
                 </div>
             </div>
