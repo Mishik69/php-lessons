@@ -61,7 +61,19 @@
                         [
                             'source'=>'img/demo/gallery/26.jpg',
                             'thumb'=>'img/demo/gallery/thumb/26.jpg',
-                        ]
+                        ],
+                        [
+                        'source'=>'img/demo/gallery/34.jpg',
+                        'thumb'=>'img/demo/gallery/thumb/34.jpg',
+                    ],
+                        [
+                            'source'=>'img/demo/gallery/41.jpg',
+                            'thumb'=>'img/demo/gallery/thumb/41.jpg',
+                        ],
+                        [
+                            'source'=>'img/demo/gallery/52.jpg',
+                            'thumb'=>'img/demo/gallery/thumb/52.jpg',
+                        ],
 
                       ];
                     ?>
